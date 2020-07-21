@@ -1,0 +1,152 @@
+$break-desktop: 1025px;
+$break-tablet-end: 1024px;
+$break-tablet-start: 768px;
+$break-smartphone-end: 767px;
+$break-smartphone-start: 1px;
+// fonts vars
+$font-main: 'Oswald', sans-serif;
+$font-sub: 'Josefin Sans', sans-serif;
+$font-weight-light: 300;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+// colors vars
+$color-1: #0052A1;
+$color-2: #FFFFFF;
+$color-3: #949DA2;
+$color-4: #555C68;
+$color-5: #2B3342;
+$color-6: #202632;
+$color-7: #E1E1E1;
+$color-8: #C3C3C3;
+// form vars
+$form-label: 'Josefin Sans', sans-serif;
+$form-text: 'Josefin Sans', sans-serif;
+$form-border-color-focus: #64D31C;
+
+$form-error-color: #FFF;
+$form-error-background-color: red;
+$form-ok-color: #FFF;
+$form-ok-background-color: #64D31C;
+
+//fonts desktop
+$h1-extra-size-desktop: 130px;
+$h1-extra-lineheight-desktop: 140px;
+$h1-extra-marginbottom-desktop: 50px;
+
+$h1-size-desktop: 60px;
+$h1-lineheight-desktop: 70px;
+$h1-marginbottom-desktop: 10px;
+
+$h2-size-desktop: 60px;
+$h2-lineheight-desktop: 70px;
+$h2-marginbottom-desktop: 10px;
+
+$h3-size-desktop: 24px;
+$h3-lineheight-desktop: 30px;
+$h3-marginbottom-desktop: 10px;
+
+$h4-size-desktop: 21px;
+$h4-lineheight-desktop: 31px;
+$h4-marginbottom-desktop: 10px;
+
+$h5-size-desktop: 14px;
+$h5-lineheight-desktop: 24px;
+$h5-marginbottom-desktop: 10px;
+
+$h6-size-desktop: 24px;
+$h6-lineheight-desktop: 34px;
+$h6-marginbottom-desktop: 10px;
+
+$paragraph-size-desktop: 16px;
+$paragraph-lineheight-desktop: 26px;
+$paragraph-marginbottom-desktop: 26px;
+
+$cta2-size-desktop: 14px;
+$cta2-lineheight-desktop: 24px;
+$cta2-marginbottom-desktop: 10px;
+
+$cta1-size-desktop: 12px;
+$cta1-lineheight-desktop: 20px;
+$cta1-marginbottom-desktop: 10px;
+
+//fonts tablet
+$h1-extra-size-tablet: 100px;
+$h1-extra-lineheight-tablet: 110px;
+$h1-extra-marginbottom-tablet: 20px;
+
+$h1-size-tablet: 60px;
+$h1-lineheight-tablet: 70px;
+$h1-marginbottom-tablet: 20px;
+
+$h2-size-tablet: 40px;
+$h2-lineheight-tablet: 570px;
+$h2-marginbottom-tablet: 10px;
+
+$h3-size-tablet: 19px;
+$h3-lineheight-tablet: 29px;
+$h3-marginbottom-tablet: 10px;
+
+$h4-size-tablet: 19px;
+$h4-lineheight-tablet: 29px;
+$h4-marginbottom-tablet: 10px;
+
+$h5-size-tablet: 14px;
+$h5-lineheight-tablet: 24px;
+$h5-marginbottom-tablet: 10px;
+
+$h6-size-tablet: 19px;
+$h6-lineheight-tablet: 29px;
+$h6-marginbottom-tablet: 10px;
+
+$paragraph-size-tablet: 16px;
+$paragraph-lineheight-tablet: 26px;
+$paragraph-marginbottom-tablet: 26px;
+
+$cta2-size-tablet: 14px;
+$cta2-lineheight-tablet: 24px;
+$cta2-marginbottom-tablet: 10px;
+
+$cta1-size-tablet: 12px;
+$cta1-lineheight-tablet: 18px;
+$cta1-marginbottom-tablet: 10px;
+
+//fonts smartphone
+$h1-extra-size-smartphone: 45px;
+$h1-extra-lineheight-smartphone: 55px;
+$h1-extra-marginbottom-smartphone: 20px;
+
+$h1-size-smartphone: 45px;
+$h1-lineheight-smartphone: 55px;
+$h1-marginbottom-smartphone: 20px;
+
+$h2-size-smartphone: 40px;
+$h2-lineheight-smartphone: 570px;
+$h2-marginbottom-smartphone: 10px;
+
+$h3-size-smartphone: 19px;
+$h3-lineheight-smartphone: 29px;
+$h3-marginbottom-smartphone: 10px;
+
+$h4-size-smartphone: 19px;
+$h4-lineheight-smartphone: 29px;
+$h4-marginbottom-smartphone: 10px;
+
+$h5-size-smartphone: 14px;
+$h5-lineheight-smartphone: 24px;
+$h5-marginbottom-smartphone: 10px;
+
+$h6-size-smartphone: 19px;
+$h6-lineheight-smartphone: 29px;
+$h6-marginbottom-smartphone: 10px;
+
+$paragraph-size-smartphone: 16px;
+$paragraph-lineheight-smartphone: 26px;
+$paragraph-marginbottom-smartphone: 26px;
+
+$cta2-size-smartphone: 14px;
+$cta2-lineheight-smartphone: 24px;
+$cta2-marginbottom-smartphone: 10px;
+
+$cta1-size-smartphone: 12px;
+$cta1-lineheight-smartphone: 18px;
+$cta1-marginbottom-smartphone: 10px;

@@ -1,0 +1,22 @@
+// imports
+@import 'css/vars';
+@import 'css/reset';
+@import 'css/defaults';
+@import 'css/mixin'; // imports mobile
+@media screen and (min-width: $break-smartphone-start) and (max-width: $break-smartphone-end) {
+  @import 'css/typography-smart';
+  @import 'css/structure-smart';
+  //@import 'css/pictures-smart';
+}
+// imports tablet
+@media screen and (min-width: $break-tablet-start) and (max-width: $break-tablet-end) {
+  @import 'css/typography-tablet';
+  @import 'css/structure-tablet';
+  //@import 'css/pictures-tablet';
+}
+// imports desktop
+@media screen and (min-width: $break-desktop) {
+  @import 'css/typography-desktop';
+  @import 'css/structure-desktop';
+  //@import 'css/images-desktop';
+}

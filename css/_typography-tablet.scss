@@ -1,0 +1,189 @@
+@import 'vars';
+@import 'mixin';
+h1.extra {
+  font-family: $font-sub;
+  font-weight: $font-weight-bold;
+  font-size: $h1-extra-size-tablet;
+  line-height: $h1-extra-lineheight-tablet;
+  margin-bottom: $h1-extra-marginbottom-tablet;
+  @include text-breaker;
+}
+
+h1 {
+  font-family: $font-sub;
+  font-weight: $font-weight-bold;
+  font-size: $h1-size-tablet;
+  line-height: $h1-lineheight-tablet;
+  margin-bottom: $h1-marginbottom-tablet;
+  @include text-breaker;
+}
+
+
+h2 {
+  font-family: $font-sub;
+  font-weight: $font-weight-bold;
+  font-size: $h2-size-tablet;
+  line-height: $h2-lineheight-tablet;
+  margin-bottom: $h2-marginbottom-tablet;
+  @include text-breaker;
+}
+
+h3 {
+  font-family: $font-sub;
+  font-weight: $font-weight-semibold;
+  font-size: $h3-size-tablet;
+  line-height: $h3-lineheight-tablet;
+  margin-bottom: $h3-marginbottom-tablet;
+  @include text-breaker;
+}
+
+h4, .scheda-prodotto-txts h2, .scheda-app-txts h2 {
+  font-family:  $font-sub;
+  font-weight: $font-weight-semibold;
+  font-size: $h4-size-tablet;
+  line-height: $h4-lineheight-tablet;
+  margin-bottom: $h4-marginbottom-tablet;
+  @include text-breaker;
+}
+
+h5 {
+  font-family: $font-sub;
+  font-weight: $font-weight-bold;
+  font-size: $h5-size-tablet;
+  line-height: $h5-lineheight-tablet;
+  margin-bottom: $h5-marginbottom-tablet;
+  @include text-breaker;
+}
+
+.footer-tax {
+  font-family: $font-sub;
+  font-weight: $font-weight-semibold;
+  font-size: $h5-size-tablet;
+  line-height: $h5-lineheight-tablet;
+  margin-bottom: 0;
+  @include text-breaker;
+}
+
+h6, .termdesc p {
+  font-family: $font-main;
+  font-weight: $font-weight-light;
+  font-size: $h6-size-tablet;
+  line-height: $h6-lineheight-tablet;
+  margin-bottom: $h6-marginbottom-tablet;
+  @include text-breaker;
+}
+
+p {
+  font-family: $font-main;
+  font-weight: $font-weight-light;
+  font-size: $paragraph-size-tablet;
+  line-height: $paragraph-lineheight-tablet;
+  margin: 0 0 $paragraph-marginbottom-tablet 0;
+  @include text-breaker;
+  padding: 0;
+}
+
+.scheda-prodotto-txts p {
+  margin-bottom: 0;
+}
+
+.cta-1 {
+  font-family: $font-main;
+  font-weight:$font-weight-bold;
+  font-size: $cta1-size-tablet;
+  line-height: $cta1-lineheight-tablet;
+  margin-bottom: $cta1-marginbottom-tablet;
+  @include text-breaker;
+}
+
+.cta-1-b {
+  font-family: $font-main;
+  font-weight:$font-weight-light;
+  font-size: $cta1-size-tablet;
+  line-height: $cta1-lineheight-tablet;
+  margin-bottom: $cta1-marginbottom-tablet;
+  @include text-breaker;
+}
+
+.menu, .archive-menu, .foot-menu {
+  font-family: $font-sub;
+  font-weight:$font-weight-bold;
+  font-size: $cta2-size-tablet;
+  line-height: $cta2-lineheight-tablet;
+  text-transform: uppercase;
+}
+
+.hamburger {
+  font-family: $font-sub;
+  font-weight:$font-weight-bold;
+  font-size: $cta1-size-tablet;
+  line-height: $cta1-lineheight-tablet;
+  text-transform: uppercase;
+}
+
+.content-styled {
+  @include text-breaker;
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-sub;
+  font-weight: $font-weight-bold;
+  font-size: $h5-size-tablet;
+  line-height: $h5-lineheight-tablet;
+  margin-bottom: $h5-marginbottom-tablet;
+  word-wrap:break-word;
+  color: $color-1;
+}
+ul {
+  font-family: $font-main;
+  font-weight: $font-weight-light;
+  font-size: $paragraph-size-tablet;
+  line-height: $paragraph-lineheight-tablet;
+  margin-bottom: $paragraph-marginbottom-tablet;
+  list-style-position:inside;
+  list-style: none;
+  padding: 0;
+}
+ul li {
+  display: table-row;
+}
+ul li:before {
+  position: relative;
+  display: table-cell;
+  content: '-';
+  font-size: 20px;
+  color: $color-1;
+  font-weight: $font-weight-bold;
+  padding: 0 20px 0 0;
+}
+ol {
+  font-family: $font-main;
+  font-weight: $font-weight-light;
+  font-size: $paragraph-size-tablet;
+  line-height: $paragraph-lineheight-tablet;
+  margin-bottom: $paragraph-marginbottom-tablet;
+  list-style-type: none;
+  list-style-type: decimal;
+  padding: 0;
+  counter-reset: li-counter;
+}
+ol > li {
+	overflow: hidden;
+	position: relative;
+	margin:0;
+	padding:0 0 0 20px;
+	display: table-row;
+}
+ol > li:before {
+	position: relative;
+	display: table-cell;
+  top: 0;
+  left:0;
+	color: $color-1;
+  font-family: $font-sub;
+  font-weight: $font-weight-bold;
+  font-size: $paragraph-size-tablet;
+  text-align: right;
+  content: counter(li-counter)" ";
+  counter-increment: li-counter;
+	padding: 0 15px 0 0;
+}
+}
