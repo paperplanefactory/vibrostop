@@ -49,12 +49,8 @@ function synth_google_analytics() { ?>
 </script>
 <script>
 document.addEventListener( 'wpcf7mailsent', function( event ) {
- window.dataLayer.push({
- "event" : "cf7submission",
- "formId" : event.detail.contactFormId,
- "response" : event.detail.inputs
- })
-});
+  ga('send', 'event', 'Contact Form', 'submit');
+}, false );
 </script>
 <?php }
 
