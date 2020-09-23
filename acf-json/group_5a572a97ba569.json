@@ -1,0 +1,50 @@
+{
+    "key": "group_5a572a97ba569",
+    "title": "Prefisso antivibranti",
+    "fields": [
+        {
+            "key": "field_5a572a97c5467",
+            "label": "Antivibranti",
+            "name": "prefisso_antivibranti",
+            "type": "text",
+            "instructions": "Inserire per ogni lingua la parola relativa <br>\r\nAntivibranti --- ITALIANO <br>\r\nAnti-vibration mounts --- INGLESE <br>\r\nSupports antivibratoires --- FRANCESE <br>\r\nSoportes antivibratorios --- SPAGNOLO <br>\r\nSchwingungsdämpfer --- TEDESCO <br>\r\nАнтивибрационные опоры --- RUSSO",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "applicazione"
+            }
+        ],
+        [
+            {
+                "param": "taxonomy",
+                "operator": "==",
+                "value": "cat_applicazione"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1600851392
+}
