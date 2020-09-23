@@ -13,7 +13,10 @@ get_header();
   <div class="wrapper-padded">
     <div class="wrapper-padded-more">
 
-      <h2 class="txt-6 aligncenter"><?php the_field('titolo_sezione2'); ?></h2>
+      <h2 class="txt-6 like-h2 aligncenter"><?php the_field('titolo_sezione_categorie'); ?></h2>
+
+      <!-- <?php $cat = get_field('dcv');
+      echo $cat;?> -->
 
       <div class="flex-hold flex-hold-3 def-margin-top">
 				<?php
@@ -22,6 +25,7 @@ get_header();
           'hide_empty' => false,
           'orderby' => 'name',
           'order' => 'ASC',
+          'include' => $cat,
          ) );
           if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
             foreach ( $terms as $term ) {
@@ -42,20 +46,20 @@ get_header();
 
            ?>
           <div class="flex-hold-child bg-2">
-            <div class="scheda-prodotto-img">
-              <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-                <picture>
-                  <source media="(max-width: 767px)" data-srcset="<?php echo $thumb_url_mobile; ?>">
-                  <source media="(max-width: 1024px)" data-srcset="<?php echo $thumb_url_tablet; ?>">
-                  <source media="(min-width: 1025px)" data-srcset="<?php echo $thumb_url_desktop; ?>">
-                  <img data-src="<?php echo $thumb_url_mobile; ?>" title="<?php echo $attachment_title; ?> - <?php echo get_bloginfo( 'name' ); ?>" alt="<?php echo $attachment_alt; ?> - <?php echo get_bloginfo( 'name' ); ?>"  class="lazy" />
-                </picture>
-              </a>
-            </div>
             <div class="scheda-prodotto-txts">
               <div class="cta-1 allupper">
               </div>
-              <h2 class="allupper"><a href="<?php the_permalink(); ?>" title="<?php echo $name; ?>"><?php echo $name; ?></a></h2>
+              <h2 class="like-h2 allupper"><a href="<?php echo get_term_link( $term ); ?>" title="<?php echo $name; ?>"><?php echo $name; ?></a></h2>
+              <div class="scheda-prodotto-img">
+                <a href="<?php echo get_term_link( $term ); ?>" title="<?php the_title(); ?>">
+                  <picture>
+                    <source media="(max-width: 767px)" data-srcset="<?php echo $thumb_url_mobile; ?>">
+                    <source media="(max-width: 1024px)" data-srcset="<?php echo $thumb_url_tablet; ?>">
+                    <source media="(min-width: 1025px)" data-srcset="<?php echo $thumb_url_desktop; ?>">
+                    <img data-src="<?php echo $thumb_url_mobile; ?>" title="<?php echo $attachment_title; ?> - <?php echo get_bloginfo( 'name' ); ?>" alt="<?php echo $attachment_alt; ?> - <?php echo get_bloginfo( 'name' ); ?>"  class="lazy" />
+                  </picture>
+                </a>
+              </div>
               <p>
                 <?php echo $desc; ?>
               </p>
@@ -80,7 +84,7 @@ get_header();
     <div class="wrapper-padded-more">
 
       <div class="container">
-        <h2 class="txt-2"><?php the_field('titolo_cta') ?></h2>
+        <h2 class="txt-2 like-h2"><?php the_field('titolo_cta') ?></h2>
         <a href="tel:<?php the_field('numero_telefono'); ?>"><h3 class="lp-button bg-1 txt-2"><?php the_field('numero_telefono'); ?></h3></a>
       </div>
 
@@ -90,7 +94,7 @@ get_header();
 
 <!-- 6 campi acf -->
 <div class="wrapper bg-3 lp-scegliere">
-  <h2 class="txt-6 aligncenter"><?php the_field('titolo_sezione2'); ?></h2>
+  <h2 class="txt-2 like-h2 aligncenter"><?php the_field('titolo_sezione_perche_scegliere_noi'); ?></h2>
   <div class="wrapper-padded">
     <div class="wrapper-padded-more">
 
@@ -102,7 +106,7 @@ get_header();
         ?>
 
         <div class="flex-hold-child bg-2">
-          <a href="<?php the_sub_field('link'); ?>"><h4 class="txt-6"><?php the_sub_field('titolo'); ?></h4></a>
+          <h4 class="txt-6"><a href="<?php the_sub_field('link'); ?>"><?php the_sub_field('titolo'); ?></a></h4>
         </div>
 
         <?php
@@ -116,9 +120,10 @@ get_header();
 </div>
 
 
-<div class="wrapper">
+<div class="wrapper lp-applicazione">
   <div class="wrapper-padded">
     <div class="wrapper-padded-more">
+      <h2 class="aligncenter like-h2 txt-6"><?php the_field('titolo_sezione_applicazioni'); ?></h2>
       <div class="flex-hold flex-hold-4 def-margin-top">
 				<?php
         $get_apps = array(
@@ -142,7 +147,7 @@ get_header();
     <div class="wrapper-padded-more">
 
       <div class="container">
-        <h2 class="txt-2"><?php the_field('titolo_cta') ?></h2>
+        <h2 class="txt-2 like-h2"><?php the_field('titolo_cta') ?></h2>
         <a href="tel:<?php the_field('numero_telefono'); ?>"><h3 class="lp-button bg-1 txt-2"><?php the_field('numero_telefono'); ?></h3></a>
       </div>
 
@@ -152,7 +157,7 @@ get_header();
 
 <!-- testo immagine -->
 
-<div class="wrapper bg-2 lp-txt-img def-margin-top">
+<!-- <div class="wrapper bg-2 lp-txt-img def-margin-top">
   <div class="wrapper-padded">
     <div class="wrapper-padded-more">
 
@@ -161,7 +166,7 @@ get_header();
           <div class="product-card-image">
             <?php
               $thumb_id_left = get_field('immagine_sezione_quattro');
-              $thumb_url_desktop_left = $thumb_id_left['sizes']['pro_size_desktop'];
+              $thumb_url_desktop_left = $thumb_id_left['sizes']['pro_size_card'];
               $thumb_url_tablet_left = $thumb_id_left['sizes']['pro_size_card'];
               $thumb_url_mobile_left = $thumb_id_left['sizes']['pro_size_card'];
             ?>
@@ -174,14 +179,17 @@ get_header();
           </div>
         </div>
         <div class="card-grid-right">
-          <div class="padder content-styled">
-            <?php the_field('testo_sezione_quattro'); ?>
+          <div class="container padder">
+            <h3 class="txt-6"><?php the_field('titolo_sezione_quattro'); ?></h3>
+            <div class="content-styled">
+              <?php the_field('testo_sezione_quattro'); ?>
+            </div>
           </div>
         </div>
       </div>
 
     </div>
   </div>
-</div>
+</div> -->
 
 <?php get_footer(); ?>

@@ -967,6 +967,15 @@ $header-height: 110px;
   }
 }
 
+.lp-categorie{
+  padding-top: 25px;
+  .scheda-prodotto-txts{
+    p{
+      margin-top: 10px;
+    }
+  }
+}
+
 .lp-button{
   padding: 25px;
   border-radius: 50px;
@@ -982,11 +991,17 @@ $header-height: 110px;
   }
 }
 
+.lp-applicazione{
+  padding-top: 25px;
+}
+
 .lp-scegliere{
+  padding-top: 25px;
   .flex-hold-child{
     flex: none;
     margin-top: 15px;
     padding: 5px;
+    width: calc(100% - 10px);
     &:nth-of-type(1){
       margin-top: 0;
     }

@@ -646,6 +646,24 @@ $header-height: 170px;
   }
 }
 
+.flex-hold-5 {
+  .flex-hold-child {
+    -webkit-box-flex: 1;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+  }
+  .flex-hold-child-double {
+    -webkit-box-flex: 1;
+    -ms-flex: 0 0 40%;
+    flex: 0 0 20%;
+  }
+  .flex-hold-child-triple {
+    -webkit-box-flex: 1;
+    -ms-flex: 0 0 60%;
+    flex: 0 0 65%;
+  }
+}
+
 .flex-hold-4 {
   .flex-hold-child {
     -webkit-box-flex: 1;
@@ -992,6 +1010,26 @@ $header-height: 170px;
   }
 }
 
+// Stili per home page
+
+.lp-categorie{
+  padding-top: 25px;
+  .scheda-prodotto-txts{
+    margin: 0;
+    padding: 0;
+    h2{
+      text-align: center
+    }
+    p{
+      padding: 5px 10px;
+      margin-top: 10px;
+    }
+    .scheda-prodotto-img{
+      margin-bottom: 25px;
+    }
+  }
+}
+
 .lp-button{
   padding: 25px;
   border-radius: 50px;
@@ -1004,14 +1042,22 @@ $header-height: 170px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    h2{
+      margin-bottom: 0;
+    }
   }
 }
 
 .lp-scegliere{
+  padding-top: 25px;
   .flex-hold-child{
-    flex: 0 0 calc(15% - 10px);
-    padding: 5px;
+    flex: 0 0 calc(15% - 20px);
+    padding: 10px;
   }
+}
+
+.lp-applicazione{
+  padding-top: 25px;
 }
 
 .lp-txt-img{

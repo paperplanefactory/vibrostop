@@ -28,6 +28,15 @@ h2 {
   @include text-breaker;
 }
 
+.like-h2{
+    font-family: $font-sub;
+    font-weight: $font-weight-bold;
+    font-size: $h2-size-smartphone;
+    line-height: 57px;
+    margin-bottom: $h2-marginbottom-smartphone;
+    @include text-breaker;
+}
+
 h3 {
   font-family: $font-sub;
   font-weight: $font-weight-semibold;
