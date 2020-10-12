@@ -40,12 +40,12 @@ get_header();
           $thumb_id = get_field('immagine_categoria', $term_group . '_' . $term_id);
           $attachment_title = get_the_title($thumb_id);
           $attachment_alt = get_post_meta( $thumb_id, '_wp_attachment_image_alt', true);
-          $thumb_url_desktop = $thumb_id['sizes']['pro_size_desktop'];
+          $thumb_url_desktop = $thumb_id['sizes']['pro_size_card'];
           $thumb_url_tablet = $thumb_id['sizes']['pro_size_card'];
           $thumb_url_mobile = $thumb_id['sizes']['pro_size_card'];
 
            ?>
-          <div class="flex-hold-child bg-2">
+          <div class="flex-hold-child">
             <div class="scheda-prodotto-txts">
               <div class="cta-1 allupper">
               </div>
@@ -56,7 +56,7 @@ get_header();
                     <source media="(max-width: 767px)" data-srcset="<?php echo $thumb_url_mobile; ?>">
                     <source media="(max-width: 1024px)" data-srcset="<?php echo $thumb_url_tablet; ?>">
                     <source media="(min-width: 1025px)" data-srcset="<?php echo $thumb_url_desktop; ?>">
-                    <img data-src="<?php echo $thumb_url_mobile; ?>" title="<?php echo $attachment_title; ?> - <?php echo get_bloginfo( 'name' ); ?>" alt="<?php echo $attachment_alt; ?> - <?php echo get_bloginfo( 'name' ); ?>"  class="lazy" />
+                    <img data-src="<?php echo $thumb_url_mobile; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>"  class="lazy" />
                   </picture>
                 </a>
               </div>
@@ -85,7 +85,7 @@ get_header();
 
       <div class="container">
         <h2 class="txt-2 like-h2"><?php the_field('titolo_cta') ?></h2>
-        <a href="tel:<?php the_field('numero_telefono'); ?>"><h3 class="lp-button bg-1 txt-2"><?php the_field('numero_telefono'); ?></h3></a>
+        <h3 class="lp-button bg-1 txt-2"><a href="<?php the_field('link_cta'); ?>" <?php if( get_field( 'trace_mail' ) ==='si' ) : ?> onClick="_gaq.push(['_trackEvent', Email, 'Click', 'email a info']);" <?php endif; ?>><?php the_field('numero_telefono'); ?></a></h3>
       </div>
 
     </div>
@@ -148,7 +148,7 @@ get_header();
 
       <div class="container">
         <h2 class="txt-2 like-h2"><?php the_field('titolo_cta') ?></h2>
-        <a href="tel:<?php the_field('numero_telefono'); ?>"><h3 class="lp-button bg-1 txt-2"><?php the_field('numero_telefono'); ?></h3></a>
+        <h3 class="lp-button bg-1 txt-2"><a href="<?php the_field('link_cta'); ?>"<?php if( get_field( 'trace_mail' ) ==='si' ) : ?> onClick="_gaq.push(['_trackEvent', Email, 'Click', 'email a info']);" <?php endif; ?>><?php the_field('numero_telefono'); ?></a></h3>
       </div>
 
     </div>
