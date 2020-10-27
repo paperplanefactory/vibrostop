@@ -85,7 +85,7 @@ get_header();
 
       <div class="container">
         <h2 class="txt-2 like-h2"><?php the_field('titolo_cta') ?></h2>
-        <h3 class="lp-button bg-1 txt-2"><a href="<?php the_field('link_cta'); ?>" <?php if( get_field( 'trace_mail' ) ==='si' ) : ?> onClick="_gaq.push(['_trackEvent', Email, 'Click', 'email a info']);" <?php endif; ?>><?php the_field('numero_telefono'); ?></a></h3>
+        <h3 class="lp-button bg-1 txt-2"><a href="<?php the_field('link_cta'); ?>" <?php if( get_field( 'trace_mail' ) ==='si' ) : ?> onClick="_gaq.push(['_trackEvent','send', 'event', 'email mailto', 'clicked', 'info@vibrostop.it');" <?php endif; ?>><?php the_field('numero_telefono'); ?></a></h3>
       </div>
 
     </div>

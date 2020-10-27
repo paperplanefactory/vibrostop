@@ -44,7 +44,7 @@ function synth_google_analytics() { ?>
   <!-- End Google Tag Manager -->
   <script>
   gtag('config', 'AW-960500016/d1xFCPzsktcBELCigMoD', {
-    'phone_conversion_number': '0248950008'
+    'phone_conversion_number': '+39 02 48950008'
   });
   gtag('config', 'AW-960500016');
 </script>

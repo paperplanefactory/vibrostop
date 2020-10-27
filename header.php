@@ -48,12 +48,7 @@ h1, h2, h3, h4, h5, h6, .archive-menu {
 }
 </style>
 <?php endif; ?>
-<?php if( is_page_template('page-thank-you.php') ): ?>
-  <!-- Event snippet for Website traffic conversion page -->
-<script>
-gtag('event', 'conversion', {'send_to': 'AW-960500016/rVUoCNexmdYBELCigMoD'});
-</script>
-<?php endif; ?>
+
 <link rel="apple-touch-icon" sizes="57x57" href="<?php bloginfo('stylesheet_directory'); ?>/images/favicons/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="<?php bloginfo('stylesheet_directory'); ?>/images/favicons/apple-icon-60x60.png">
 <link rel="apple-touch-icon" sizes="72x72" href="<?php bloginfo('stylesheet_directory'); ?>/images/favicons/apple-icon-72x72.png">
