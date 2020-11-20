@@ -64,6 +64,7 @@ $header-height: 110px; // wrappers
   display: block;
 }
 // header
+
 #preheader {
   position: relative;
   display: block;
@@ -389,6 +390,7 @@ $header-height: 110px; // wrappers
   }
 }
 // footer
+
 #footer {
   position: relative;
   display: block;
@@ -452,6 +454,15 @@ $header-height: 110px; // wrappers
     -ms-flex: 0 0 60%;
     flex: 0 0 60%;
     padding-right: 5%;
+
+    p {
+      display: inline-block;
+      font-family: $font-main;
+      font-weight: $font-weight-bold;
+      font-size: $cta1-size-smartphone;
+      line-height: $cta1-lineheight-smartphone;
+      margin: 0 !important;
+    }
   }
 
   .footer-bottom-hold-child-right {
@@ -484,6 +495,7 @@ $header-height: 110px; // wrappers
   margin-bottom: 15px;
 }
 // fullscreen boxes
+
 .box-fullscreen {
   position: relative;
   display: block;
@@ -560,6 +572,7 @@ $header-height: 110px; // wrappers
   color: $color-3;
 }
 // schede
+
 .scheda-prodotto-img {
   position: relative;
 
@@ -639,6 +652,7 @@ $header-height: 110px; // wrappers
   }
 }
 // flex boxes
+
 .flex-hold {
   position: relative;
   width: 100%;

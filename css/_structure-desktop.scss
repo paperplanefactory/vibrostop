@@ -450,6 +450,15 @@ $header-height: 170px; // wrappers
     -ms-flex: 0 0 45%;
     flex: 0 0 45%;
     padding-right: 5%;
+
+    p {
+      display: inline-block;
+      font-family: $font-main;
+      font-weight: $font-weight-bold;
+      font-size: $cta1-size-desktop;
+      line-height: $cta1-lineheight-desktop;
+      margin: 0 !important;
+    }
   }
 
   .footer-bottom-hold-child-right {
