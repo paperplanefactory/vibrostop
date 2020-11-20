@@ -68,9 +68,6 @@ h1, h2, h3, h4, h5, h6, .archive-menu {
 </head>
 
 <body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PJ49DJM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
   <div id="header" class="header-shadow">
     <div class="wrapper-padded">
       <div id="header-structure">

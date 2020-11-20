@@ -28,7 +28,7 @@ global $isTablet;
 global $isDesktop;
 
 // add google analytics to footer
-add_action( 'wp_head', 'synth_google_analytics');
+// add_action( 'wp_head', 'synth_google_analytics');
 function synth_google_analytics() { ?>
   <!-- Google Tag Manager -->
   <script>
