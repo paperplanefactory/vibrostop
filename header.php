@@ -65,6 +65,13 @@ h1, h2, h3, h4, h5, h6, .archive-menu {
 <link rel="manifest" href="<?php bloginfo('stylesheet_directory'); ?>/images/favicons/manifest.json">
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="<?php bloginfo('stylesheet_directory'); ?>/images/favicons/ms-icon-144x144.png">
+
+<?php if( is_page_template('page-thank-you.php') ): ?>
+  <!-- Event snippet for Contatti conversion page -->
+  <script>
+    gtag('event', 'conversion', {'send_to': 'AW-960500016/rVUoCNexmdYBELCigMoD'});
+  </script>
+<?php endif; ?>
 </head>
 
 <body>

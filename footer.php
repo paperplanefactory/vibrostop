@@ -102,11 +102,6 @@ global $current_lang;
 </div>
 <?php wp_footer();
 ?>
-<?php if( is_page_template('page-thank-you.php') ): ?>
-  <!-- Event snippet for Website traffic conversion page -->
-<script>
-gtag('event', 'conversion', {'send_to': 'AW-960500016/rVUoCNexmdYBELCigMoD'});
-</script>
-<?php endif; ?>
+
 </body>
 </html>
